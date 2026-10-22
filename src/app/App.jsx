@@ -1,17 +1,23 @@
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Navbar from "../shared/layout/Navbar";
 import Footer from "../shared/layout/Footer";
-import AppRouter from "./router";
+import HomePage from "../features/home/pages/HomePage";
+import TeamsPage from "../features/teams/pages/TeamsPage";
+import PlayersPage from "../features/players/pages/PlayersPage";
 import "../App.css";
 
 function App() {
   return (
     <>
       <Navbar />
-
-      <main>
-        <AppRouter />
-      </main>
-
+      <BrowserRouter>
+        <Routes>
+          <Route path="*" element={<Navigate to="/" replace />} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/teamsPage" element={<TeamsPage />} />
+          <Route path="/playersPage" element={<PlayersPage />} />
+        </Routes>
+      </BrowserRouter>
       <Footer />
     </>
   );
