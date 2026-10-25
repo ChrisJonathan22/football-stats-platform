@@ -8,8 +8,8 @@ function Navbar() {
         <div className="logo">FootStats</div>
         <ul>
           <li><NavLink to="/" className={ ( { isActive } ) => isActive ? "active" : null }>Home</NavLink></li>
-          <li><NavLink to="/teams" className={ ( { isActive } ) => isActive ? "active" : null }>Teams</NavLink></li>
-          <li><NavLink to="/players" className={ ( { isActive } ) => isActive ? "active" : null }>Players</NavLink></li>
+          <li><NavLink to="/teamspage" className={ ( { isActive } ) => isActive ? "active" : null }>Teams</NavLink></li>
+          <li><NavLink to="/playerspage" className={ ( { isActive } ) => isActive ? "active" : null }>Players</NavLink></li>
         </ul>
       </div>
     </nav>;

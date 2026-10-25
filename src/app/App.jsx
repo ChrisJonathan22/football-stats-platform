@@ -9,16 +9,18 @@ import "../App.css";
 function App() {
   return (
     <>
-      <Navbar />
+      
       <BrowserRouter>
+      <Navbar />
         <Routes>
           <Route path="*" element={<Navigate to="/" replace />} />
           <Route path="/" element={<HomePage />} />
           <Route path="/teamsPage" element={<TeamsPage />} />
           <Route path="/playersPage" element={<PlayersPage />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
-      <Footer />
+      
     </>
   );
 }
