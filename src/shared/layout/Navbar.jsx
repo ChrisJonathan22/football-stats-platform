@@ -9,7 +9,7 @@ function Navbar() {
         <ul>
           <li><NavLink to="/" className={ ( { isActive } ) => isActive ? "active" : null }>Home</NavLink></li>
           <li><NavLink to="/teamspage" className={ ( { isActive } ) => isActive ? "active" : null }>Teams</NavLink></li>
-          <li><NavLink to="/playerspage" className={ ( { isActive } ) => isActive ? "active" : null }>Players</NavLink></li>
+          <li><NavLink to="/teamdetailspage" className={ ( { isActive } ) => isActive ? "active" : null }>Team Details</NavLink></li>
         </ul>
       </div>
     </nav>;
