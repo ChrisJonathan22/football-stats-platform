@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import HomePage from "../features/home/pages/HomePage";
-import TeamsPage from "../features/teams/pages/TeamsPage";
-import TeamDetailsPage from "../features/teamsDetail/pages/TeamDetailsPage";
+import HomePage from "../features/home/pages/HomePage.tsx";
+import TeamsPage from "../features/teams/pages/TeamsPage.tsx";
+import TeamDetailsPage from "../features/teamsDetail/pages/TeamDetailsPage.tsx";
 import "../App.css";
 import Layout from "../shared/layout/Layout";
 
