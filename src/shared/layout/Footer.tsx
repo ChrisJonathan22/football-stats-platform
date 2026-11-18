@@ -4,17 +4,20 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <Box component="footer" sx={{ backgroundColor: "#f5f5f5", padding: "1rem", textAlign: "center" }}>
+    <Box
+      component="footer"
+      sx={{ backgroundColor: "#f5f5f5", padding: "1rem", textAlign: "center" }}
+    >
       <div>Footer</div>
       <Container maxWidth="lg">
-        <Grid container spacing={2} justifyContent="center">
-          <Grid item>
+        <Grid container spacing={2} sx={{ justifyContent: "center" }}>
+          <Grid>
             <Link to="/about">About</Link>
           </Grid>
-          <Grid item>
+          <Grid>
             <Link to="/privacy-policy">Privacy Policy</Link>
           </Grid>
-          <Grid item>
+          <Grid>
             <Link to="/terms-of-service">Terms of Service</Link>
           </Grid>
         </Grid>

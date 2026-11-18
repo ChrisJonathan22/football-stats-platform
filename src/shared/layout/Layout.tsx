@@ -1,15 +1,19 @@
-import React from 'react';
-import { Box, Container } from '@mui/material';
-import Navbar from './Navbar'; // Your Navbar component
-import Footer from './Footer'; // Your Footer component
+import React from "react";
+import { Box, Container } from "@mui/material";
+import Navbar from "./Navbar"; // Your Navbar component
+import Footer from "./Footer"; // Your Footer component
 
-export default function Layout({ children }) {
+interface LayoutProps {
+  children: React.ReactNode;
+}
+
+export default function Layout({ children }: LayoutProps) {
   return (
     <Box
       sx={{
-        display: 'flex',
-        flexDirection: 'column',
-        minHeight: '100vh',
+        display: "flex",
+        flexDirection: "column",
+        minHeight: "100vh",
       }}
     >
       <Navbar />
@@ -22,9 +26,7 @@ export default function Layout({ children }) {
           py: 3,
         }}
       >
-        <Container maxWidth="lg">
-          {children}
-        </Container>
+        <Container maxWidth="lg">{children}</Container>
       </Box>
 
       <Footer />
